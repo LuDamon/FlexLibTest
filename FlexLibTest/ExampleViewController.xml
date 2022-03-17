@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FlexScrollView layout="flex:1" attr="vertScroll:true,bgColor:white">
+    
+    <FlexContainerView>
+        
+        <UIView name="" layout="paddingLeft:15,paddingRight:15," attr="bgColor:white">
+            
+            <UIView layout="minHeight:45, flex:1" attr="hidden:false,bgColor:#f3f2f7">
+                <UILabel name="" layout="marginLeft:5,marginRight:5,height:45" attr="@:view/CJLabelBase">
+                    <Text  attr="text:这是一段超级长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长的描述。,color:#86858a"/>
+                </UILabel>
+            </UIView>
+            
+            <UIView name="" layout="minHeight:45" onPress="" attr="hidden:false">
+                <UIView name="" layout="minHeight:45,flexDirection:row" attr="">
+                    
+                    <UIView layout="minHeight:45,flexDirection:row,justifyContent:flex-start" attr="">
+                        <UILabel attr="text:货物描述,@:view/CJLabelBase"/>
+                    </UIView>
+                    <UITextField name="" layout="flex:1" attr="@:view/CJFiledLeftBase,placeholder:请输入货物描述 ,textAlign:right"/>
+                </UIView>
+                <UIView layout="height:0.5" attr="bgColor:#f2f2f2" />
+            </UIView>
+            
+            <UIView name="" layout="minHeight:45" onPress="" attr="hidden:false">
+                <UIView name="" layout="minHeight:45,flexDirection:row" attr="">
+                    <UIView layout="minHeight:45,flexDirection:row,justifyContent:flex-start" attr="">
+                        <UILabel attr="text:总重量(吨),@:view/CJLabelBase"/>
+                        <UILabel name="" layout="width:7" attr="fontSize:14,text:*,color:red"/>
+                    </UIView>
+                    <UITextField name="totalWeightTF" layout="flex:1" attr="@:view/CJFiledLeftBase,placeholder:请输入总重量 ,keyboardType:decimalPad,textAlign:right"/>
+                </UIView>
+                <UIView layout="@:view/CJLineHeight" attr="@:view/CJBackgroundColor" />
+            </UIView>
+            
+            <!--         每车重量-->
+            <UIView name="" layout="minHeight:45" onPress="" attr="hidden:false">
+                <UIView name="" layout="minHeight:45,flexDirection:row" attr="">
+                    <UIView layout="minHeight:45,flexDirection:row,justifyContent:flex-start" attr="">
+                        <UILabel attr="text:每车重量(吨),@:view/CJLabelBase"/>
+                        <UILabel name="" layout="width:7" attr="fontSize:14,text:*,color:red"/>
+                    </UIView>
+                    <UITextField name="" layout="flex:1" attr="@:view/CJFiledLeftBase,placeholder:请输入每车重量 ,keyboardType:decimalPad,textAlign:right"/>
+                </UIView>
+                <UIView layout="@:view/CJLineHeight" attr="@:view/CJBackgroundColor" />
+            </UIView>
+            
+            <!--         需求车数-->
+            <UIView name="" layout="minHeight:45" onPress="" attr="hidden:false">
+                <UIView name="" layout="minHeight:45,flexDirection:row" attr="">
+                    <UIView layout="minHeight:45,flexDirection:row,justifyContent:flex-start" attr="">
+                        <UILabel attr="text:需求车数,@:view/CJLabelBase"/>
+                        <UILabel name="" layout="width:7" attr="fontSize:14,text:*,color:red"/>
+                    </UIView>
+                    <UITextField name="" layout="flex:1" attr="@:view/CJFiledLeftBase,placeholder:请输入需求车数 ,text:1,keyboardType:numberPad,textAlign:right"/>
+                </UIView>
+                <UIView layout="@:view/CJLineHeight" attr="@:view/CJBackgroundColor" />
+            </UIView>
+            
+            <!--         价格-->
+            <UIView name="" layout="minHeight:45" onPress="" attr="hidden:false">
+                <UIView name="" layout="minHeight:45,flexDirection:row" attr="">
+                    <UIView layout="minHeight:45,flexDirection:row,justifyContent:flex-start" attr="">
+                        <UILabel attr="text:价格(元/吨),@:view/CJLabelBase"/>
+                        <UILabel name="" layout="width:7" attr="fontSize:14,text:*,color:red"/>
+                    </UIView>
+                    <UITextField name="" layout="flex:1" attr="@:view/CJFiledLeftBase,placeholder:请输入单价 ,keyboardType:decimalPad,textAlign:right"/>
+                </UIView>
+                <UIView layout="@:view/CJLineHeight" attr="@:view/CJBackgroundColor" />
+            </UIView>
+            
+            <!--         总价-->
+            <UIView name="" layout="minHeight:45" onPress="" attr="hidden:false">
+                <UIView name="" layout="minHeight:45,flexDirection:row" attr="">
+                    <UIView layout="minHeight:45,flexDirection:row,justifyContent:flex-start" attr="">
+                        <UILabel attr="text:总价,@:view/CJLabelBase"/>
+                        <UILabel name="" layout="width:7" attr="fontSize:14,text:*,color:red"/>
+                    </UIView>
+                    <UITextField name="" layout="flex:1" attr="@:view/CJFiledLeftBase,placeholder:请输入总价 ,keyboardType:decimalPad,textAlign:right"/>
+                </UIView>
+                <UIView layout="@:view/CJLineHeight" attr="@:view/CJBackgroundColor" />
+            </UIView>
+            
+            <!--         保价费-->
+            <UIView name="" layout="minHeight:45" onPress="" attr="hidden:false">
+                <UIView name="" layout="minHeight:45,flexDirection:row" attr="">
+                    <UIView layout="minHeight:45,flexDirection:row,justifyContent:flex-start" attr="">
+                        <UILabel attr="text:保价费(元),@:view/CJLabelBase"/>
+                    </UIView>
+                    <UITextField name="" layout="flex:1" attr="@:view/CJFiledLeftBase,placeholder:请输入保价费 ,keyboardType:decimalPad,textAlign:right"/>
+                </UIView>
+                <UIView layout="@:view/CJLineHeight" attr="@:view/CJBackgroundColor" />
+            </UIView>
+            
+            <!--         收货方-->
+            <UIView name="" layout="minHeight:45" onPress="" attr="hidden:false">
+                <UIView name="" layout="minHeight:45,flexDirection:row" attr="">
+                    <UIView layout="minHeight:45,flexDirection:row,justifyContent:flex-start" attr="">
+                        <UILabel attr="text:收货方,@:view/CJLabelBase"/>
+                    </UIView>
+                    <UITextField name="" layout="flex:1" attr="@:view/CJFiledLeftBase,placeholder:请输入收货方社会统一信用代码或身份证号 ,textAlign:right"/>
+                </UIView>
+                <UIView layout="@:view/CJLineHeight" attr="@:view/CJBackgroundColor" />
+            </UIView>
+            
+            
+            <!--    选填信息-->
+            <UIView name="" layout="paddingLeft:15,paddingRight:15," attr="bgColor:white">
+                
+                <!--        装卸信息-->
+                <UIView name="" layout="minHeight:45" onPress="" attr="hidden:false">
+                    <UIView layout="minHeight:45,flexDirection:row,justifyContent:space-between" onPress="" attr="">
+                        
+                        <UIView layout="minHeight:45,flexDirection:row,justifyContent:flex-start" attr="">
+                            <UILabel attr="text:装卸信息,@:view/CJLabelBase,color:orange"/>
+                        </UIView>
+                        <FlexTouchView onPress="" layout="minWidth:60,flexDirection:row" attr="">
+                            <UISwitch name="" layout="marginTop:7"></UISwitch>
+                        </FlexTouchView>
+                    </UIView>
+                    
+                    <UIView layout="@:view/CJLineHeight" attr="@:view/CJBackgroundColor" />
+                </UIView>
+                
+                <UIView name="" layout="minHeight:45" attr="">
+                    
+                    <!--         最高接受价-->
+                    <UIView name="maxReceivePriceView" layout="minHeight:45" onPress="" attr="">
+                        <UIView name="" layout="minHeight:45,flexDirection:row" attr="">
+                            <UIView layout="minHeight:45,flexDirection:row,justifyContent:flex-start" attr="">
+                                <UILabel attr="text:最高接受价,@:view/CJLabelBase"/>
+                                <UILabel name="" layout="width:7" attr="fontSize:14,text:*,color:red"/>
+                            </UIView>
+                            <UITextField name="" layout="flex:1" attr="@:view/CJFiledLeftBase,placeholder:请输入最高接受价(元/吨),keyboardType:decimalPad,textAlign:right"/>
+                        </UIView>
+                        <UIView layout="@:view/CJLineHeight" attr="@:view/CJBackgroundColor" />
+                    </UIView>
+                    
+                    <!--         装车费-->
+                    <UIView name="" layout="minHeight:45" onPress="" attr="hidden:false">
+                        <UIView name="" layout="minHeight:45,flexDirection:row" attr="">
+                            <UIView layout="minHeight:45,flexDirection:row,justifyContent:flex-start" attr="">
+                                <UILabel attr="text:装车费(元),@:view/CJLabelBase"/>
+                            </UIView>
+                            <UITextField name="" layout="flex:1" attr="@:view/CJFiledLeftBase,placeholder:请输入装车费 ,keyboardType:decimalPad,textAlign:right"/>
+                        </UIView>
+                        <UIView layout="@:view/CJLineHeight" attr="@:view/CJBackgroundColor" />
+                    </UIView>
+                    
+                    <!--         卸车费-->
+                    <UIView name="" layout="minHeight:45" onPress="" attr="hidden:false">
+                        <UIView name="" layout="minHeight:45,flexDirection:row" attr="">
+                            <UIView layout="minHeight:45,flexDirection:row,justifyContent:flex-start" attr="">
+                                <UILabel attr="text:卸车费(元),@:view/CJLabelBase"/>
+                            </UIView>
+                            <UITextField name="" layout="flex:1" attr="@:view/CJFiledLeftBase,placeholder:请输入卸车费 ,keyboardType:decimalPad,textAlign:right"/>
+                        </UIView>
+                        <UIView layout="@:view/CJLineHeight" attr="@:view/CJBackgroundColor" />
+                    </UIView>
+                    
+                </UIView>
+                
+                <!--        路耗信息-->
+                <UIView name="" layout="minHeight:45" onPress="" attr="hidden:false">
+                    <UIView layout="minHeight:45,flexDirection:row,justifyContent:space-between" onPress="" attr="">
+                        
+                        <UIView layout="minHeight:45,flexDirection:row,justifyContent:flex-start" attr="">
+                            <UILabel attr="text:路耗信息,@:view/CJLabelBase,color:orange"/>
+                        </UIView>
+                        <FlexTouchView onPress="" layout="minWidth:60,flexDirection:row" attr="">
+                            <UISwitch name="" layout="marginTop:7"></UISwitch>
+                        </FlexTouchView>
+                    </UIView>
+                    
+                    <UIView layout="@:view/CJLineHeight" attr="@:view/CJBackgroundColor" />
+                </UIView>
+                
+                <UIView name="" layout="minHeight:45" attr="">
+                    
+                    <!--        最大允许路耗-->
+                    <UIView name="" layout="minHeight:45" onPress="" attr="hidden:false">
+                        <UIView name="" layout="minHeight:45,flexDirection:row" attr="">
+                            <UIView layout="minHeight:45,flexDirection:row,justifyContent:flex-start" attr="">
+                                <UILabel attr="text:最大允许路耗,@:view/CJLabelBase"/>
+                            </UIView>
+                            <UITextField name="" layout="flex:1,marginRight:5" attr="@:view/CJFiledLeftBase,placeholder:请输入最大允许路耗 ,keyboardType:decimalPad,textAlign:right"/>
+                            <UILabel name="unitLabel" attr="text:kg/车,@:view/CJLabelBase"/>
+                        </UIView>
+                        <UIView layout="@:view/CJLineHeight" attr="@:view/CJBackgroundColor" />
+                    </UIView>
+                    
+                    <!--        公里数-->
+                    <UIView name="" layout="minHeight:45" onPress="" attr="hidden:false">
+                        <UIView name="" layout="minHeight:45,flexDirection:row" attr="">
+                            <UIView layout="minHeight:45,flexDirection:row,justifyContent:flex-start" attr="">
+                                <UILabel attr="text:公里数,@:view/CJLabelBase"/>
+                            </UIView>
+                            <UITextField name="" layout="flex:1,marginRight:5" attr="@:view/CJFiledLeftBase,placeholder:请输入公里数 ,keyboardType:decimalPad,textAlign:right"/>
+                        </UIView>
+                        <UIView layout="@:view/CJLineHeight" attr="@:view/CJBackgroundColor" />
+                    </UIView>
+                    
+                    <!--        货物价格-->
+                    <UIView name="" layout="minHeight:45" onPress="" attr="hidden:false">
+                        <UIView name="" layout="minHeight:45,flexDirection:row" attr="">
+                            <UIView layout="minHeight:45,flexDirection:row,justifyContent:flex-start" attr="">
+                                <UILabel attr="text:货物价格,@:view/CJLabelBase"/>
+                            </UIView>
+                            <UITextField name="" layout="flex:1,marginRight:5" attr="@:view/CJFiledLeftBase,placeholder:请输入货物价格 ,keyboardType:decimalPad,textAlign:right"/>
+                            <UILabel attr="text:元/吨,@:view/CJLabelBase"/>
+                        </UIView>
+                        <UIView layout="@:view/CJLineHeight" attr="@:view/CJBackgroundColor" />
+                    </UIView>
+                    
+                </UIView>
+                
+                
+                <!--        其他信息-->
+                <UIView name="" layout="minHeight:45" onPress="" attr="hidden:false">
+                    <UIView layout="minHeight:45,flexDirection:row,justifyContent:space-between" onPress="" attr="">
+                        
+                        <UIView layout="minHeight:45,flexDirection:row,justifyContent:flex-start" attr="">
+                            <UILabel attr="text:其他信息,@:view/CJLabelBase,color:orange"/>
+                        </UIView>
+                        <FlexTouchView onPress="" layout="minWidth:60,flexDirection:row" attr="">
+                            <UISwitch name="" layout="marginTop:7"></UISwitch>
+                        </FlexTouchView>
+                    </UIView>
+                    
+                    <UIView layout="@:view/CJLineHeight" attr="@:view/CJBackgroundColor" />
+                </UIView>
+                
+                <UIView name="" layout="minHeight:45" attr="">
+                    
+                    <!--         委托人-->
+                    <UIView name="" layout="minHeight:45" onPress="" attr="hidden:false">
+                        <UIView name="" layout="minHeight:45,flexDirection:row" attr="">
+                            
+                            <UIView layout="minHeight:45,flexDirection:row,justifyContent:flex-start" attr="">
+                                <UILabel attr="text:委托人,@:view/CJLabelBase"/>
+                            </UIView>
+                            <UITextField name="" layout="flex:1" attr="@:view/CJFiledLeftBase,placeholder:请输入委托人 ,textAlign:right"/>
+                        </UIView>
+                        <UIView layout="@:view/CJLineHeight" attr="@:view/CJBackgroundColor" />
+                    </UIView>
+                    
+                    <!--        货源单号-->
+                    <UIView name="" layout="minHeight:45" onPress="" attr="hidden:false">
+                        <UIView name="" layout="minHeight:45,flexDirection:row" attr="">
+                            
+                            <UIView layout="minHeight:45,flexDirection:row,justifyContent:flex-start" attr="">
+                                <UILabel attr="text:货源单号,@:view/CJLabelBase"/>
+                            </UIView>
+                            <UITextField name="" layout="flex:1" attr="@:view/CJFiledLeftBase,placeholder:请输入货源单号 ,textAlign:right"/>
+                        </UIView>
+                        <UIView layout="@:view/CJLineHeight" attr="@:view/CJBackgroundColor" />
+                    </UIView>
+                    
+                    <!--        联系电话-->
+                    <UIView name="" layout="minHeight:45" onPress="" attr="hidden:false">
+                        <UIView name="" layout="minHeight:45,flexDirection:row" attr="">
+                            
+                            <UIView layout="minHeight:45,flexDirection:row,justifyContent:flex-start" attr="">
+                                <UILabel attr="text:联系电话,@:view/CJLabelBase"/>
+                            </UIView>
+                            <UITextField name="" layout="flex:1" attr="@:view/CJFiledLeftBase,placeholder:请输入联系电话 ,keyboardType:numberPad,textAlign:right"/>
+                        </UIView>
+                        <UIView layout="@:view/CJLineHeight" attr="@:view/CJBackgroundColor" />
+                    </UIView>
+                    
+                    <!--       备注-->
+                    <UIView name="" layout="minHeight:45" onPress="" attr="hidden:false">
+                        <UIView name="" layout="minHeight:45,flexDirection:row" attr="">
+                            
+                            <UIView layout="minHeight:45,flexDirection:row,justifyContent:flex-start" attr="">
+                                <UILabel attr="text:备注,@:view/CJLabelBase"/>
+                            </UIView>
+                            <UITextField name="" layout="flex:1" attr="@:view/CJFiledLeftBase,placeholder:请输入备注 ,textAlign:right"/>
+                        </UIView>
+                        <UIView layout="@:view/CJLineHeight" attr="@:view/CJBackgroundColor" />
+                    </UIView>
+                    
+                    
+                </UIView>
+                
+            </UIView>
+            
+            <UIView attr="bgColor:white">
+                
+                <!--        保存-->
+                <FlexTouchView name="" onPress="" layout="@:view/CJTouchSubmintConfig" attr="@:view/CJMainBGColor, @:view/CJLayerCornerRFive">
+                    <UILabel name="" layout="flex:1" attr="@:view/CJLabelBase, color:white ,fontSize:15 ,textAlign:center ,text:确认提交"/>
+                </FlexTouchView>
+                
+                <UIView layout="height:30">
+                </UIView>
+                
+            </UIView>
+        
+        
+        </UIView>
+    
+    </FlexContainerView>
+            
+    
+</FlexScrollView>
+
+
